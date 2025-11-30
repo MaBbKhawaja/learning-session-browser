@@ -1,0 +1,49 @@
+{
+  "name": "learning-browser-library",
+  "version": "0.0.1",
+  "description": "A Vue 3 component library with Input and Toggle components",
+  "author": "Mirza Anees Baig Barlas",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "vue",
+    "vue3",
+    "components",
+    "ui",
+    "input",
+    "toggle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/learning-session-browser.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/learning-browser-library.umd.cjs",
+  "module": "./dist/learning-browser-library.js",
+  "exports": {
+    ".": {
+      "import": "./dist/learning-browser-library.js",
+      "require": "./dist/learning-browser-library.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "types": "vue-tsc ",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vue-tsc": "^2.1.6"
+  }
+}
