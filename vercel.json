@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd learning-browser && npm install && npm run build",
+  "outputDirectory": "learning-browser/dist",
+  "framework": "vite"
+}
+
