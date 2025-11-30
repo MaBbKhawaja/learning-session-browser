@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "vue": "^3.2.47",
-    "learning-browser-library": "file:../learning-browser-library"
+    "learning-browser-library": "0.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
@@ -21,4 +21,3 @@
     "vue-tsc": "^2.1.6"
   }
 }
-
