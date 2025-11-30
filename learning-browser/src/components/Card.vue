@@ -50,7 +50,7 @@
 import { Toggle } from 'learning-browser-library'
 import type { Session } from '../types'
 
-const props = defineProps<{
+defineProps<{
   session: Session
 }>()
 
