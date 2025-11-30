@@ -1,6 +1,6 @@
 {
   "name": "learning-browser-library",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "A Vue 3 component library with Input and Toggle components",
   "author": "Mirza Anees Baig Barlas",
   "license": "MIT",
@@ -25,6 +25,7 @@
   "module": "./dist/learning-browser-library.js",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/learning-browser-library.js",
       "require": "./dist/learning-browser-library.umd.cjs"
     },

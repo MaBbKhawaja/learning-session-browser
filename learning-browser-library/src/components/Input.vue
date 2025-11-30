@@ -14,20 +14,13 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-  modelValue: {
-    type: String,
-    default: "",
-  },
-  placeholder: {
-    type: String,
-    default: "Search...",
-  },
-  id: {
-    type: String,
-    default: undefined,
-  },
-});
+interface Props {
+  modelValue?: string
+  placeholder?: string
+  id?: string
+}
+
+defineProps<Props>()
 
 const emit = defineEmits<{
   "update:modelValue": [value: string];

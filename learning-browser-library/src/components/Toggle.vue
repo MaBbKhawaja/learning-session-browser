@@ -13,20 +13,14 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  modelValue: {
-    type: Boolean,
-    default: false,
-  },
-  disabled: {
-    type: Boolean,
-    default: false,
-  },
-  label: {
-    type: String,
-    default: "",
-  },
-});
+interface Props {
+  modelValue?: boolean
+  disabled?: boolean
+  label?: string
+  id?: string
+}
+
+const props = defineProps<Props>()
 
 const emit = defineEmits<{
   "update:modelValue": [value: boolean];
