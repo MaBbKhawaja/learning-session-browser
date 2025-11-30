@@ -7,7 +7,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
-      'learning-browser-library': resolve(__dirname, '../learning-browser-library/src'),
     },
   },
 })
